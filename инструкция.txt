@@ -1,0 +1,21 @@
+contact form 7
+
+<div class="theme-form-wrapp">
+[text text-5 class:input-text "Ваше имя"]
+
+[mask* mask-350 class:input-text "+7(___)___-__-__"]
+
+[acceptance acceptance-296 optional class:input-check] Put the condition for consent here. [/acceptance]
+
+[submit class:button class:themeModal2__button "Отправить"]
+</div>
+
+WP Rocket
+
+не применять сжатие
+
+mega menu 
+
+Адаптивный брейкпойнт 910px
+
+Отключить панель переключения мобильных устройств

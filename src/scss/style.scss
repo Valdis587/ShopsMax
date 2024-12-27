@@ -1,0 +1,97 @@
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/navigation.scss";
+@import "node_modules/swiper/modules/effect-fade.scss";
+@import "node_modules/swiper/modules/thumbs.scss";
+@import "node_modules/swiper/modules/pagination.scss";
+@import "node_modules/swiper/modules/effect-coverflow.scss";
+
+@import "base/null.scss";
+@import "base/mixin";
+:root {
+   --ColorThemePrimary: #051829;
+   --ColorThemeDuble: #199045;
+   --ColorTopLine: #555555;
+   --ColorText: #555555;
+   --ColorRed: #ff2d37;
+   --ColorButton: #0E121D;
+   --ColorButtonShop: #0E121D;
+   --ColorButtonShopHover: #ff2d37;
+   --ColorWhite: #ffffff;
+   --ColorButtonHover: #ff2d37;
+   --ColorLink: #2e4a97;
+   --ColorLinkHover: #4d7af7;
+   --ColorCount: #04b32a;
+   --yith-wcan-labels_style_background_hover: #ff2d37;
+    --yith-wcan-filters_colors_accent: #ff2d37;
+    --yith-wcan-anchors_style_text_hover:  #ff2d37;
+    --yith-wcan-anchors_style_text_active: #ff2d37;
+    --badgickSale: #ff2d37;
+    --badgickNew: #3599ff;
+    --badgickHit: #098524;
+}
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$ColorThemePrimary: var(--ColorThemePrimary);
+$ColorThemeDuble: var(--ColorThemeDuble);
+$ColorTopLine: var(--ColorTopLine);
+$ColorText: var(--ColorText);
+$ColorRed: var(--ColorRed);
+$ColorButton: var(--ColorButton);
+$ColorButtonShop: var(--ColorButtonShop);
+$ColorButtonShopHover: var(--ColorButtonShopHover);
+$ColorWhite: var(--ColorWhite);
+$ColorButtonHover: var(--ColorButtonHover);
+$ColorLink: var(--ColorLink);
+$ColorLinkHover: var(--ColorLinkHover);
+$ColorCount: var(--ColorCount);
+
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow-x: hidden;
+}
+.content-wrapper {
+   flex-grow: 1;
+   margin: 224px 0 50px 0;
+   max-width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+   z-index: 1;
+}
+
+footer {
+   margin-top: auto;
+}
+body {
+   color: $ColorText;
+   background-color: $ColorWhite;
+}
+
+
+
+@import "fonts";
+@import "settings.scss";
+@import "popsearch.scss";
+@import "title.scss";
+@import "./wp/wpstyle.scss";
+@import "headpanel.scss";
+@import "woo/woo.scss";
+@import "header";
+@import "cart/cart-reviews.scss";
+@import "cart/cart-news.scss";
+@import "single.scss";
+@import "footer";
+
+

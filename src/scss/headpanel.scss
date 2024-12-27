@@ -1,0 +1,21 @@
+.headpanel {
+    &__content {
+     padding: 10px 10px 20px 10px;
+    }
+    &__title {
+        @include funcAdaptiv(font-size, 18, 35);
+        line-height: 110%;
+       padding: 0 0 10px 0;
+    }
+    .breadcrumbs, .woocommerce-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .breadcrumbs__active, a:hover , .woocommerce-breadcrumb a:hover{
+        color: $ColorThemeDuble;
+    }
+    .woocommerce-breadcrumb  {
+        color: $ColorThemePrimary;
+    }
+}

@@ -1,0 +1,120 @@
+.search-head {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all ease 0.4s;
+    button.searchClose {
+        width: 50px;
+        height: 50px;
+        line-height: 52px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: $ColorRed;
+        font-size: 22px;
+        border-radius: 10px;
+        transform: rotate(45deg);
+        transition: all ease 0.4s;
+        color: $ColorWhite;
+        border: 0;
+        &:hover {
+          color: $ColorThemePrimary;
+          background-color: #fff;
+          border-color: transparent;
+          border-color: transparent;
+          transform: rotate(360deg);
+        }
+      }
+      .formshop {
+        display: grid;
+        grid-template-columns: 300px auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding-bottom: 40px;
+        cursor: auto;
+        width: 100%;
+        max-width: 900px;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform ease 0.3s;
+        @media(max-width: 600px) {
+          grid-template-columns: 200px auto;
+         }
+         @media(max-width: 500px) {
+          grid-template-columns: 100%;
+         }
+        .formshop__input, .formshop__select {
+            font-size: 18px;
+            height: 70px;
+            width: 100%;
+            border: none;
+            background-color: $ColorWhite;
+            //border: 2px solid $ColorThemePrimary;
+            padding: 0 80px 0 30px;
+            color: $ColorText;
+            border-bottom: 2px solid $ColorRed;
+            border-top: 2px solid $ColorRed;
+
+        }
+        .formshop__input {
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+          color: #949494;
+          border-right: 2px solid $ColorRed;
+          @media(max-width: 500px) {
+            border-bottom-left-radius: 50px;
+          border-top-left-radius: 50px;
+          border-left: 2px solid $ColorRed;
+           }
+        }
+        .formshop__select {
+          border-bottom-left-radius: 50px;
+          border-top-left-radius: 50px;
+          color: #949494;
+          border-left: 2px solid $ColorRed;
+          @media(max-width: 500px) {
+            display: none;
+           }
+        }
+        .formshop__search-button {
+            position: absolute;
+            top: 0px;
+            background-color: transparent;
+            border: none;
+            color: $ColorThemePrimary;
+            font-size: 24px;
+            right: 12px;
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            transition: all ease 0.3s;
+            transform: scale(1.001);
+            
+            &:hover {
+              transform: scale(1.1);
+            }
+        }
+      }
+      &.search-show {
+        opacity: 1;
+        visibility: visible;
+        width: 100.1%;
+        height: 100%;
+        transition: all ease 0.4s;
+        border-radius: 0;
+    
+        form {
+          transition-delay: 0.5s;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+}

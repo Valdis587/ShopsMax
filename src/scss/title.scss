@@ -1,0 +1,105 @@
+.caruselhome {
+   .title-home-wrapper {
+    .title-home span {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+.title-home-wrapper {
+  margin: 50px 0 30px 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    @media (max-width: 760px) {
+       margin: 20px 0;
+   }
+   &::before, &::after {
+    content: "";
+    display: table;
+    @media(max-width: 600px) {
+     display: none;
+    }
+   }
+ 
+.title-home {
+    position: relative;
+    border-bottom: none;
+    margin: 0 0 30px;
+    border-color: $ColorThemeDuble;
+    border-bottom-color: $ColorThemeDuble;
+  font-size: 100%;
+  padding: 0;
+  margin: 0px 0px -1px 0px;
+  height: 40px;
+  @media(max-width: 600px) {
+    border: none;
+    height: auto;
+  }
+  &::after {
+    display: none;
+  }
+  &::before {
+    content: "";
+    border: 1px solid #ddd;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    @media(max-width: 600px) {
+      display: none;
+     }
+  }
+& span {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 18px;
+    background-color: $ColorThemeDuble;
+    @media(max-width: 600px) {
+      background-color: $ColorWhite;
+      color: $ColorText;
+      text-align: center;
+      width: 100%;
+      line-height: 110%;
+      font-weight: 600;
+     }
+}
+& span::before {
+  @media(max-width: 600px) {
+    display: none;
+   }
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        width: 0;
+        height: 0;
+        border-bottom: 40px solid $ColorThemeDuble;
+        right: -20px;
+        border-right: 20px solid transparent;
+    }
+  }
+  .title-line {
+    background: $ColorThemeDuble;
+    position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+}
+ }
+ .desc-home {
+    font-weight: 600;
+    padding: 10px 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+ }
